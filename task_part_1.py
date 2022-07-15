@@ -70,7 +70,14 @@ SELECT VSP_E as VSP, VAL, GROUP_VSP FROM BA) DATA
 GROUP BY GROUP_VSP, VSP
 '''
 
+# сделать корректно не удалось, в sqlite нет возмжоности задавать переменные, другого способа не нашел
 task_5 = '''
+SELECT 
+USER_ID, user_position,
+MIN(date_position) OVER (PARTITION BY user_position) AS position_start,
+MAX(date_position) OVER (PARTITION BY user_position) AS position_end
+FROM users_position
+ORDER BY USER_ID, position_start
 '''
 
 # Запуск функции
