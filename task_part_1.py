@@ -91,11 +91,15 @@ if __name__ == '__main__':
     
     # task_1
     print(input_base(sql_request=task_1, base_name='sber_data.sqlite3'))
+    print()
     # task_2
     print(input_base(sql_request=task_2, base_name='sber_data.sqlite3'))
+    print()
     # task_3
     print(input_base(sql_request=task_3, base_name='sber_data.sqlite3'))
+    print()
     # task_4
     print(input_base(sql_request=task_4, base_name='sber_data.sqlite3'))
+    print()
     # task_5
     # print(input_base(sql_request=task_5, base_name='sber_data.sqlite3'))
