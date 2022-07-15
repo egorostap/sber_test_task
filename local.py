@@ -16,16 +16,14 @@ def count_tags(url=''):
             all_tags = [elm.tag for elm in all_elms]
             count_tegs = Counter(all_tags)
 
-            print('all tags:', dict(count_tegs))
-            print('all count:', len(all_elms), 'head:', count_tegs['head'])
+            # print('all tags:', dict(count_tegs))
+            # print('all count:', len(all_elms), 'head:', count_tegs['head'])
 
             result = {url: count_tegs}
             return result
 
         except:
-            print('Страница отсутствует')
             return 'Страница отсутствует'
 
     else:
-        print('Введите корректный url-адрес')
         return 'Введите корректный url-адрес'

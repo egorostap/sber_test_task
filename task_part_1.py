@@ -1,5 +1,10 @@
 from funcs import *
 
+'''
+для выплонения заданий и тестов была сформирована база данных согласно требованиям в заданиях, прилагаю ее в репозитории
+функции обработки запросов прописал в файле "funcs"
+'''
+
 task_1 = '''
 SELECT Transactions.Client_id, Transactions.Report_date, 
 round(Transactions.Txn_amount/
@@ -92,3 +97,5 @@ if __name__ == '__main__':
     print(input_base(sql_request=task_3, base_name='sber_data.sqlite3'))
     # task_4
     print(input_base(sql_request=task_4, base_name='sber_data.sqlite3'))
+    # task_5
+    # print(input_base(sql_request=task_5, base_name='sber_data.sqlite3'))
