@@ -8,7 +8,6 @@ app = Flask(__name__)
 # ссылка для проверки: http://127.0.0.1:5000/endpoint/tags
 @app.route('/endpoint/tags', methods=['POST', 'GET'])
 def take_tags():
-    request_method = request.method
     if request.method == 'POST':
         url = request.form['url']
         answer = count_tags(url)

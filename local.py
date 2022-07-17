@@ -14,12 +14,12 @@ def count_tags(url=''):
             tree = html.fromstring(page.content)
             all_elms = tree.cssselect('*')
             all_tags = [elm.tag for elm in all_elms]
-            count_tegs = Counter(all_tags)
+            count_tags = Counter(all_tags)
 
             # print('all tags:', dict(count_tegs))
             # print('all count:', len(all_elms), 'head:', count_tegs['head'])
 
-            result = {url: count_tegs}
+            result = {url: count_tags}
             return result
 
         except:
